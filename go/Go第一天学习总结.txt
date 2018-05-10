@@ -1,0 +1,25 @@
+1.Go的主方法是main 在代码中必须用package把main引入
+2.import 导包
+3.声明变量的方式 
+    3.1 a:="dasd" 这种只在函数体内有用
+    3.2 var a int 
+    3.3 var a,b,c,b int
+    3.4 a,b,c,d:=.....
+    3.5 var a=10;浮点型和整数可直接赋值
+    3.5 var bools bool 布尔值
+4.全局变量在函数体外 vara=10; 常量 const s int=30
+    4.1 常量可以写成枚举 const(
+        a=...
+        b=...
+    )
+    4.2 常量中有一个类似于sql的自动增长组件 iota第一个赋值iota后后面的变量iota就会自动增长
+        如果给了独立值那独立值下面的变量就会和独立值一样直到重新赋值iota
+        iota的值就是自动增加的值
+5.if,else switch select
+    5.1 if else 流程判断语句
+    5.2 switch 选择判断语句
+    5.3 select 控制结构
+    5.4 Type switch 判断某个interface中储存的变量类型
+ 
+6. 总结 如果局部变量声明了没使用会抱错然后花括号必须和函数或者表达式在一行不能换行
+        select没有理解
