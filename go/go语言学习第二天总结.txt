@@ -1,0 +1,35 @@
+go的循环
+    for switch  
+    关键字 goto可以跳到标识过的代码上
+    breack跳出循环
+    continue进行下一次循环
+go的function
+    //标准样式
+    func name(x,y int) int{
+
+    }
+    //返回多值
+    func name(x int, y int) (int,int){
+
+    }
+    //按值传递参数
+    func name(x int,y int) int{
+
+    }
+    //函数引用传递参数
+    func name(x *int,y *int){
+        var s int;
+        s=*y;
+    }
+    name(&x,&y);
+    //函数变量
+    fnction:=func(x,y int) int{
+
+    }
+    function();
+    //闭包
+    func name(x,y int) func() (int,int){
+        return func() (int,int){
+            return x,y;
+        }
+    }
