@@ -37,6 +37,7 @@ func main() {
 	//传递参数的匿名函数
 	gets := getstring(10, 50)
 	fmt.Println(gets())
+
 }
 
 //一个标准的函数
